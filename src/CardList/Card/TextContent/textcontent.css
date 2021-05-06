@@ -1,0 +1,19 @@
+/*Стили textContent*/
+.textContent {
+	display: flex;
+	flex-flow: row wrap;
+	padding: 22px 20px 13px;
+}
+@media (max-width: 1024px) {
+	.textContent {
+		order: 2;
+		padding-left: 38px;
+	}
+}
+@media all and (min-width: 1540px) {
+	.textContent {
+		flex-basis: 672px;
+	}
+}
+
+

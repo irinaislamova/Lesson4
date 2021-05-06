@@ -1,0 +1,9 @@
+.karmaCounter > * + * {
+	padding: 0 0 0 4px;
+}
+.karmaValue {
+	color: var(--greyC4);
+}
+svg.down {
+	transform: rotate(180deg);
+}
