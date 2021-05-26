@@ -1,8 +1,9 @@
 import React from 'react';
 
-interface IItem {
+export interface IItem {
 	value: string;
 	id?: string;
+	onClick?: any;
 }
 
 interface IMyListProps {
@@ -13,23 +14,12 @@ export function MyList({list}: IMyListProps) {
 	return (
 		<ul>
 		{list.map((item: IItem) => 
-			<li key={item.id}>{item.value}</li>
+			<li key={item.id}
+			    onClick={ () => item.onClick(item.id) }>
+			    {item.value} </li>
 			)}
 		</ul>
 		)
 }
 
-// export function MyList({ list }: IMyListProps) {
-// 	return (
-// 		<ul>		
-// 		{list.map((item: IItem) => (
-// 			<li key = {item.id}
-//                 onClick = {item.onClick}
-// 			>
-// 			{item.value}
-// 			</li>
-// 		))}
-// 		</ul>
-// 	)
-// }
 
