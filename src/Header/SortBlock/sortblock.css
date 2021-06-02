@@ -1,17 +1,30 @@
+.title {
+	margin-left: 40px;
+	margin-bottom: 41px;
+	font-size: 28px;
+	font-weight: 400;
+	color: #333333;
+}
+@media (max-width: 320px) {
+	.title {
+		margin-left: 20px;
+		margin-bottom: 15px;
+		font-size: 20px;
+	}
+}
 .sortBlock {
 	background-color: var(--white);
-	padding: 11px 20px;
+	padding: 0 20px;
 	border-radius: 7px;
 	margin: 0 0 20px;
 }
 @media (max-width: 320px) {
 	.sortBlock {
 		width: 100%;
-		height: 36px;
+		height: auto;
 		margin-top: 15px;
 	}
 }
-
 @media all and (min-width: 1024px) {
 	.sortBlock {
 		background-color: transparent;
