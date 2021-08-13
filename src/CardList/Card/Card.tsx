@@ -8,11 +8,15 @@ import { Menu } from './Menu';
 
 export function Card() {
   return (
-  	<li className={styles.card}>
-  		<TextContent />
-  		<Preview />
-  		<Menu />
-  		<Controls />
+  	<li className={styles.card}> 
+      <div className={styles.first_column}> 		
+        <TextContent />
+  		  <Preview />  
+      </div>  
+      <div className={styles.second_column}>  
+  		  <Menu />
+  		  <Controls />  
+      </div>    
   	</li>
   );
 }

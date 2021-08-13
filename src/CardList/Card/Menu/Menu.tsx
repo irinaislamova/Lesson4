@@ -1,16 +1,31 @@
 import React from 'react';
 import styles from './menu.css';
+import { DropdownTest } from '../../../DropdownTest';
+import { MenuItemsList } from './MenuItemsList';
+import { MenuIcon } from '../../../../Icons'; 
+
+import { IconTest } from '../../../IconTest';
+import { EIcons } from '../../../IconTest/IconTest';
 
 export function Menu() {
   return (
   	<div className={styles.menu}>
-  		<button className={styles.menuButton}>
-  		    <svg width="20" height="5" viewBox="0 0 20 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="17.5" cy="2.5" r="2.5" transform="rotate(90 17.5 2.5)" fill="#D9D9D9"/>
-            <circle cx="10" cy="2.5" r="2.5" transform="rotate(90 10 2.5)" fill="#D9D9D9"/>
-            <circle cx="2.5" cy="2.5" r="2.5" transform="rotate(90 2.5 2.5)" fill="#D9D9D9"/>
-          </svg>
-  		</button>
+    <DropdownTest 
+      button = { 
+        <button className={styles.menuButton}>
+          <IconTest name={EIcons.menu}
+                    width={'20'}
+                    height={'5'} />
+        </button> 
+      }
+    >
+    <div className={styles.dropdown}>
+      <MenuItemsList postId='1234'/>
+      <button className={styles.closeButton}>
+        Закрыть
+      </button>
+    </div>
+    </DropdownTest>    
   	</div>
   );
 }

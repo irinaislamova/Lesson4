@@ -1,5 +1,20 @@
-@media all and (min-width: 1024px) {
+.cardList {
+	border: 1px solid #000000;
+}
+.cardList {
+	padding-left: 60px;
+	padding-right: 57px;
+	padding-bottom: 60px;
+}
+@media (max-width: 1024px) {
 	.cardList {
-		padding: 40px 0;
+		padding-left: 40px;
+		padding-right: 37px;
+		padding-bottom: 40px;
+	}
+}
+@media (max-width: 320px) {
+	.cardList {
+		padding: 0;
 	}
 }

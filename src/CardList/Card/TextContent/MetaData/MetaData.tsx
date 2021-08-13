@@ -15,12 +15,10 @@ export function MetaData() {
   		        className={styles.userName}>
   		        Дмитрий Гришин
   		    </a>
-  	    </div>   
-  		<span className={styles.createdAt}>
-  		    <span className={styles.publishedLabel}>
-  		        4 часа назад
-  		    </span>
-  		</span>
+  	  </div>   
+      <div className={styles.createdAt}>  		    
+        <span className={styles.public}>опубликовано </span>4 часа назад  		    
+      </div>
   	</div>
   );
 }
